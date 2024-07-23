@@ -23,13 +23,13 @@ const showwinner = (userwin,userchoice,compchoice) => {
         userscore++;
         userscorepara.innerText=userscore;
         
-        msg.innerText = 'You Win! ';
+        msg.innerText = 'You Win! Computer choice is  ${compchoice} ';
         msg.style.backgroundColor = "green";
     } else {
         compscore++;
         compscorepara.innerText=compscore;
         
-        msg.innerText = "You lost!";
+        msg.innerText = "You lost! Computer choice is  ${compchoice}";
         msg.style.backgroundColor = "red";
     }
 }
